@@ -1,0 +1,129 @@
+.listings__header {
+  border-bottom: 1px solid var(--color-borders);
+  padding-bottom: 24px;
+}
+
+.listings__header_title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.listings__header_summary {
+  color: var(--color-text-light);
+}
+
+.listings__header_highlight {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.listings__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.listing__item {
+	margin-top: 24px;
+	margin-bottom: 24px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.listing__item-img {
+  width: 100%;
+	aspect-ratio: 16 / 9;
+	margin-top: 18px;
+}
+
+.response__placeholder {
+  color: var(--color-text);
+  margin-top: 24px;
+  padding: 0 15px;
+}
+
+.response__error {
+  color: var(--color-error-dark);
+  margin-top: 24px;
+  padding: 0 15px;
+}
+
+.listing__item-title {
+  color: var(--color-text-dark);
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+  padding: 0 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.listing__item-details {
+  display: flex;
+	justify-content: space-between;
+	margin-top: 8px;
+  padding: 0 4px;
+}
+
+.listing__item-price {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.listing__item-location {
+	color: var(--color-text-light);
+	font-size: 12px;
+}
+
+.listing__item-buttons-group {
+	padding: 0 4px;
+	margin-top: 16px;
+}
+
+.listing__item-button {
+	border: 0;
+	border-radius: 4px;
+	background-color: #00e6e6;
+	color: var(--color-primary-dark);
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 6px 12px;
+	margin-right: 6px;
+}
+
+.listing__item-description {
+  color: var(--color-text);
+  display: -webkit-box;
+	font-size: 14px;
+	margin-top: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 4px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+@media (min-width: 800px) {
+  /* tablet */
+  .listing__item {
+    width: 50%;
+	}
+	
+	.listing__item-img {
+		aspect-ratio: 2 / 1;
+	}
+}
+
+@media (min-width: 1200px) {
+  /* desktop */
+  .listing__item {
+    width: 33.33%;
+	}
+	
+	.listing__item-img {
+		aspect-ratio: 16 / 9;
+	}
+}
